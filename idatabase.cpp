@@ -60,7 +60,7 @@ bool iDatabase::deletePatient()
     patientTableModel->submitAll();
     patientTableModel->select();
 
-    return true;
+    return true;        //这个要return 不然会不知道的情况下退出 其实这个挺奇怪的
 }
 
 bool iDatabase::submitPatient()
