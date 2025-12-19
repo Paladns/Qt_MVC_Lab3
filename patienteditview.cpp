@@ -13,7 +13,7 @@ PatientEditView::PatientEditView(QWidget *parent, int index) :
     mapper->setModel(tableModel);
     mapper->setSubmitPolicy(QDataWidgetMapper::AutoSubmit);
 
-
+    //添加映 关于patient的数据表
     mapper->addMapping(ui->EditID, tableModel->fieldIndex("ID"));
     mapper->addMapping(ui->EditName, tableModel->fieldIndex("NAME"));
     mapper->addMapping(ui->EditCard, tableModel->fieldIndex("ID_CARD"));

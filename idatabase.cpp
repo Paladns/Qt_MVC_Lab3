@@ -10,7 +10,7 @@ void iDatabase::initDatabase()
     // QString afile = "../../Lab3.db";        //数据库的位置
     database.setDatabaseName(afile);
 
-    if(!database.open()){       //打开成功
+    if(!database.open()){       //打开成功  但是这个打开只是fake打开 实际有没有还得通过操作SQL语句来实现判断
         qDebug()<<"数据库打开失败";
     }else
         qDebug()<<"数据库成功打开";
